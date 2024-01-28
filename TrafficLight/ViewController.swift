@@ -17,7 +17,6 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // redLabel.alpha = 0.5
         redLabel.layer.cornerRadius = 50
         yellowLabel.layer.cornerRadius = 50
         greenLabel.layer.cornerRadius = 50
