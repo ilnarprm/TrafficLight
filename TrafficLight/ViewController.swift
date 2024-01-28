@@ -8,25 +8,21 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet var redLabel: UIView!
-    
+
     @IBOutlet var yellowLabel: UIView!
-    
+
     @IBOutlet var greenLabel: UIView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //redLabel.alpha = 0.5
+
+        // redLabel.alpha = 0.5
         redLabel.layer.cornerRadius = 50
         yellowLabel.layer.cornerRadius = 50
         greenLabel.layer.cornerRadius = 50
-        var count = 1
-        
-        
     }
-    
+
     @IBAction func startButton(_ sender: UIButton) {
         sender.setTitle("NEXT", for: .normal)
         if redLabel.alpha == 0.5 && yellowLabel.alpha == 0.5 && greenLabel.alpha == 0.5 {
@@ -41,7 +37,5 @@ final class ViewController: UIViewController {
             greenLabel.alpha = 0.5
             redLabel.alpha = 1
         }
-        
     }
 }
-
