@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CV-Xi-SHH">
-                                <rect key="frame" x="139" y="517" width="115" height="50"/>
+                                <rect key="frame" x="139" y="668" width="115" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2E8-Yv-d5o"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="otJ-hF-kPW"/>
@@ -56,7 +56,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9CV-Xi-SHH" firstAttribute="top" secondItem="tzf-Md-GOf" secondAttribute="bottom" constant="70" id="1NY-ZM-RH7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9CV-Xi-SHH" secondAttribute="bottom" constant="100" id="4uc-wb-kf5"/>
                             <constraint firstItem="aAa-g8-YVG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="FfW-KZ-4fs"/>
                             <constraint firstItem="9CV-Xi-SHH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GTO-vS-OJW"/>
                             <constraint firstItem="hJy-LR-jXX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oxr-KM-YbB"/>
@@ -79,13 +79,13 @@
     </scenes>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

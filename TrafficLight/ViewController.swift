@@ -9,32 +9,31 @@ import UIKit
 
 final class ViewController: UIViewController {
     @IBOutlet var redLabel: UIView!
-
     @IBOutlet var yellowLabel: UIView!
-
     @IBOutlet var greenLabel: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        redLabel.layer.cornerRadius = 50
-        yellowLabel.layer.cornerRadius = 50
-        greenLabel.layer.cornerRadius = 50
+        redLabel.layer.cornerRadius = redLabel.frame.width / 2
+        yellowLabel.layer.cornerRadius = yellowLabel.frame.width / 2
+        greenLabel.layer.cornerRadius = greenLabel.frame.width / 2
     }
 
     @IBAction func startButton(_ sender: UIButton) {
         sender.setTitle("NEXT", for: .normal)
-        if redLabel.alpha == 0.5 && yellowLabel.alpha == 0.5 && greenLabel.alpha == 0.5 {
-            redLabel.alpha = 1
-        } else if redLabel.alpha == 1 {
-            redLabel.alpha = 0.5
-            yellowLabel.alpha = 1
-        } else if yellowLabel.alpha == 1 {
-            yellowLabel.alpha = 0.5
-            greenLabel.alpha = 1
-        } else if greenLabel.alpha == 1 {
-            greenLabel.alpha = 0.5
-            redLabel.alpha = 1
+        let ligtingOff = 0.5
+        let lightingOn = 1.0
+        if redLabel.alpha == ligtingOff && yellowLabel.alpha == ligtingOff && greenLabel.alpha == ligtingOff {
+            redLabel.alpha = lightingOn
+        } else if redLabel.alpha == lightingOn {
+            redLabel.alpha = ligtingOff
+            yellowLabel.alpha = lightingOn
+        } else if yellowLabel.alpha == lightingOn {
+            yellowLabel.alpha = ligtingOff
+            greenLabel.alpha = lightingOn
+        } else if greenLabel.alpha == lightingOn {
+            greenLabel.alpha = ligtingOff
+            redLabel.alpha = lightingOn
         }
     }
 }
