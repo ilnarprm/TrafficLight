@@ -14,6 +14,7 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         redLabel.layer.cornerRadius = redLabel.frame.width / 2
         yellowLabel.layer.cornerRadius = yellowLabel.frame.width / 2
         greenLabel.layer.cornerRadius = greenLabel.frame.width / 2
@@ -21,8 +22,10 @@ final class ViewController: UIViewController {
 
     @IBAction func startButton(_ sender: UIButton) {
         sender.setTitle("NEXT", for: .normal)
+
         let ligtingOff = 0.5
         let lightingOn = 1.0
+
         if redLabel.alpha == ligtingOff && yellowLabel.alpha == ligtingOff && greenLabel.alpha == ligtingOff {
             redLabel.alpha = lightingOn
         } else if redLabel.alpha == lightingOn {
